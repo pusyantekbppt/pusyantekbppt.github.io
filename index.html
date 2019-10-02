@@ -32,12 +32,26 @@
     </nav>
   </div>
 
-  <!-- Parallax -->
-  <div >
-        <img id="image" src="img/bppt.jpg" class="responsive-img">
+  <!-- Slider -->
+  
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img clas="responsive-img" src="img/bppt2.jpg"> <!-- random image -->
+      </li>
+      <li>
+        <img clas="responsive-img" src="img/bppts.jpg"> <!-- random image -->
+      </li>
+      <li>
+        <img clas="responsive-img" src="img/ketua.jpg"> <!-- random image -->
+      </li>
+      <li>
+        <img clas="responsive-img" src="img/tec.png"> <!-- random image -->
+      </li>
+    </ul>
   </div>
 
-  <!-- Hubungan IT dengan Digital Marketing -->
+  <!-- Section-->
   <section id="about" class="about scrollspy">
   <div class="container">
     <div class="row">
@@ -62,23 +76,23 @@
 <section>
   <div class="container center">
     <div class="row">
-      <div class="col m4 s3">
+      <div class="col m3 s3">
         <a href="https://www.facebook.com/profile.php?id=100010981269227&fref=search&__tn__=%2Cd%2CP-R&eid=ARC63IoDcJPxs6la2rk76_3FCVCmFoy1fmc_jgMcToexfbk8P4aNPA0X34yE8ZgF_KaTVaaq-IzCJcSn">
           <img id="img" src="img/fb.png" class="responsive-img circle">
         </a>
       </div>
 
-      <div  class="col m4 s3">
+      <div  class="col m3 s3">
         <a href="https://twitter.com/pusyantekbppt" target="_blank"><img id="img" src="img/twitter.png" class="responsive-img circle">
         </a>
       </div>
 
-      <div class="col m4 s3">
+      <div class="col m3 s3">
         <a href="https://www.instagram.com/pusyantekbppt/?hl=id" target="_blank"><img id="img" src="img/ig.png" class="responsive-img circle">
         </a>
       </div>
 
-      <div  class="col m4 s3">
+      <div  class="col m3 s3">
         <a href="https://www.linkedin.com/company/pusat-pelayanan-teknologi-bppt?trk=similar-pages_result-card_full-click"><img id="img" src="img/in.png" class="responsive-img circle">
         </a>
       </div>
@@ -96,5 +110,14 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
+    <script>
+      const slider = document.querySelectorAll('.slider');
+      M.Slider.init(slider,{
+        indicators: true,
+        height: 470,
+        duration: 500,
+        interval: 2500
+      });
+    </script>
   </body>
 </html>
